@@ -13,14 +13,6 @@ from websockets_proxy import Proxy, proxy_connect
 
 init(autoreset=True)
 
-BANNER = """
- _   __  ___   _______   _ _   _   ___  
-| | / / / _ \ |___  / | | | | | | / _ \ 
-| |/ / / /_\ \   / /| | | | |_| |/ /_\ \
-|    \ |  _  |  / / | | | |  _  ||  _  |
-| |\  \| | | |./ /__| |_| | | | || | | |
-\_| \_/\_| |_/\_____/\___/\_| |_/\_| |_/                                                                                
-"""
 
 EDGE_USERAGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.2365.57",
@@ -245,7 +237,6 @@ async def connect_to_wss(socks5_proxy, user_id, mode):
             await asyncio.sleep(5)
 
 async def main():
-    print(f"{Fore.CYAN}{BANNER}{Style.RESET_ALL}")
     print(f"{Fore.CYAN}IM-Hanzou | GetGrass Crooter V2{Style.RESET_ALL}")
 
     
